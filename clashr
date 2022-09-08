@@ -25,6 +25,8 @@ proxies:
   - {name: 新加坡晚高峰8K流媒体 2, server: 42.186.175.8, port: 443, type: vmess, uuid: a928a26c-2adb-45fe-e57d-8a27dade309e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: sgarm.ptuu.cf}}, udp: true}
   - {name: YouTube梦歌|Netflix_93, server: 129.146.84.253, port: 26875, type: vmess, uuid: bb240cb0-a6d2-4b8e-ee85-a976e48ac241, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 亚洲晚高峰8K流媒体, server: in-us-1.onebox6.org, port: 38401, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: "%7B%22Host%22:%22YouTube-aweikeji%22%7D"}}, udp: true}
+  - {name: 爱尔兰晚高峰8K流媒体, server: ojje-laowang.apps.ir-thr-at1.arvan.run, port: 443, type: vmess, uuid: 2112b632-fb6c-4781-bb42-d4d310aa532f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /laowang, headers: {Host: ojje-laowang.apps.ir-thr-at1.arvan.run}}, udp: true}
+  - {name: 加拿大晚高峰8K流媒体, server: 134.195.196.143, port: 801, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
@@ -51,6 +53,8 @@ proxy-groups:
       - 新加坡晚高峰8K流媒体 2
       - YouTube梦歌|Netflix_93
       - 亚洲晚高峰8K流媒体
+      - 爱尔兰晚高峰8K流媒体
+      - 加拿大晚高峰8K流媒体
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -76,6 +80,8 @@ proxy-groups:
       - 新加坡晚高峰8K流媒体 2
       - YouTube梦歌|Netflix_93
       - 亚洲晚高峰8K流媒体
+      - 爱尔兰晚高峰8K流媒体
+      - 加拿大晚高峰8K流媒体
   - name: 🎥 NETFLIX
     type: select
     proxies:
@@ -102,6 +108,8 @@ proxy-groups:
       - 新加坡晚高峰8K流媒体 2
       - YouTube梦歌|Netflix_93
       - 亚洲晚高峰8K流媒体
+      - 爱尔兰晚高峰8K流媒体
+      - 加拿大晚高峰8K流媒体
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -140,6 +148,8 @@ proxy-groups:
       - 新加坡晚高峰8K流媒体 2
       - YouTube梦歌|Netflix_93
       - 亚洲晚高峰8K流媒体
+      - 爱尔兰晚高峰8K流媒体
+      - 加拿大晚高峰8K流媒体
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -171,6 +181,8 @@ proxy-groups:
       - 新加坡晚高峰8K流媒体 2
       - YouTube梦歌|Netflix_93
       - 亚洲晚高峰8K流媒体
+      - 爱尔兰晚高峰8K流媒体
+      - 加拿大晚高峰8K流媒体
   - name: 📲 电报信息
     type: select
     proxies:
@@ -196,6 +208,8 @@ proxy-groups:
       - 新加坡晚高峰8K流媒体 2
       - YouTube梦歌|Netflix_93
       - 亚洲晚高峰8K流媒体
+      - 爱尔兰晚高峰8K流媒体
+      - 加拿大晚高峰8K流媒体
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -222,6 +236,8 @@ proxy-groups:
       - 新加坡晚高峰8K流媒体 2
       - YouTube梦歌|Netflix_93
       - 亚洲晚高峰8K流媒体
+      - 爱尔兰晚高峰8K流媒体
+      - 加拿大晚高峰8K流媒体
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -257,6 +273,8 @@ proxy-groups:
       - 新加坡晚高峰8K流媒体 2
       - YouTube梦歌|Netflix_93
       - 亚洲晚高峰8K流媒体
+      - 爱尔兰晚高峰8K流媒体
+      - 加拿大晚高峰8K流媒体
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
