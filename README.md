@@ -6,7 +6,7 @@
 - https://raw.iqiq.io/coolinmind/cross/main/v2ray
 
 ### Clash
-- https://raw.fastgit.org/coolinmind/cross/main/cash
+- https://raw.fastgit.org/coolinmind/cross/main/clash
 - https://ghproxy.com/https://raw.githubusercontent.com/coolinmind/cross/main/cash
 - https://github.91chi.fun/https://raw.githubusercontent.com/coolinmind/cross/main/cash
 - https://raw.iqiq.io/coolinmind/cross/main/v2ray
