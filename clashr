@@ -28,6 +28,7 @@ proxies:
   - {name: 欧洲📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体 2, server: 152.67.218.38, port: 443, type: vmess, uuid: b5e9480a-b7aa-40a4-f9a7-5299b5e363b4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
   - {name: 欧洲📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体 3, server: ca1.vmess.tunnel.cx, port: 80, type: vmess, uuid: d6343cfa-3517-11ed-8d1a-27f322ae0dec, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess, headers: {Host: ca1.vmess.tunnel.cx}}, udp: true}
   - {name: 欧洲📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体 4, server: 183.240.209.15, port: 31905, type: ss, cipher: aes-256-gcm, password: bBEXIq, udp: true}
+  - {name: "|54.81Mb", server: 155.138.140.189, port: 21008, type: vmess, uuid: 80b5645a-86b7-48af-9252-977ba807a338, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
@@ -57,6 +58,7 @@ proxy-groups:
       - 欧洲📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体 2
       - 欧洲📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体 3
       - 欧洲📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体 4
+      - "|54.81Mb"
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -85,6 +87,7 @@ proxy-groups:
       - 欧洲📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体 2
       - 欧洲📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体 3
       - 欧洲📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体 4
+      - "|54.81Mb"
   - name: 🎥 NETFLIX
     type: select
     proxies:
@@ -114,6 +117,7 @@ proxy-groups:
       - 欧洲📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体 2
       - 欧洲📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体 3
       - 欧洲📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体 4
+      - "|54.81Mb"
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -155,6 +159,7 @@ proxy-groups:
       - 欧洲📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体 2
       - 欧洲📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体 3
       - 欧洲📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体 4
+      - "|54.81Mb"
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -188,6 +193,7 @@ proxy-groups:
       - 欧洲📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体 2
       - 欧洲📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体 3
       - 欧洲📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体 4
+      - "|54.81Mb"
   - name: 📲 电报信息
     type: select
     proxies:
@@ -216,6 +222,7 @@ proxy-groups:
       - 欧洲📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体 2
       - 欧洲📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体 3
       - 欧洲📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体 4
+      - "|54.81Mb"
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -245,6 +252,7 @@ proxy-groups:
       - 欧洲📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体 2
       - 欧洲📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体 3
       - 欧洲📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体 4
+      - "|54.81Mb"
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -283,6 +291,7 @@ proxy-groups:
       - 欧洲📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体 2
       - 欧洲📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体 3
       - 欧洲📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体 4
+      - "|54.81Mb"
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
