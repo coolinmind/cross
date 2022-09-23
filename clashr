@@ -5,127 +5,155 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: CN2中转 韩国, server: 193.122.96.32, port: 55044, type: trojan, password: da5f9035-e488-3d6f-8a84-b3c4ef5f3784, sni: jp.666119.xyz, skip-cert-verify: true, udp: true}
-  - {name: BGP国内专线中转 日本, server: 140.179.148.221, port: 65410, type: trojan, password: da5f9035-e488-3d6f-8a84-b3c4ef5f3784, sni: jp.666119.xyz, skip-cert-verify: true, udp: true}
-  - {name: 日本 原生IP, server: 52.192.47.70, port: 25140, type: trojan, password: da5f9035-e488-3d6f-8a84-b3c4ef5f3784, sni: jp2.666119.xyz, skip-cert-verify: true, udp: true}
-  - {name: github.com/freefq - 美国  3, server: armdj.zhdjc.me, port: 8080, type: vmess, uuid: 157ab24c-2f02-44d2-b211-6d70612c9f64, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /cctv13/hd.m3u8, headers: {Host: armdj.zhdjc.me}}, udp: true}
-  - {name: 俄罗斯晚高峰8K流媒体, server: els.tdzjing.xyz, port: 80, type: vmess, uuid: 00000000-1111-1111-1111-222222222222, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: github.com/freefq - 美国纽约市DigitalOcean云公司 26, server: 138.197.165.31, port: 8080, type: vmess, uuid: 0c7caa09-5c69-42dc-8048-8e8b0d7efd4a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /cctv13/hd.m3u8, headers: {Host: "%7B%22Host%22:%22138.197.165.31%22%7D"}}, udp: true}
-  - {name: github.com/freefq - 美国纽约市DigitalOcean云公司 30, server: 138.197.165.31, port: 8080, type: vmess, uuid: bcaf6b8f-0acb-4ffd-86ad-8f13e7dfe436, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /cctv13/hd.m3u8, headers: {Host: "%7B%22Host%22:%22138.197.165.31%22%7D"}}, udp: true}
-  - {name: github.com/freefq - 美国纽约市DigitalOcean云公司 31, server: 138.197.165.31, port: 8080, type: vmess, uuid: 2ed609d0-7467-471b-94a9-34a734ccc40a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /cctv13/hd.m3u8, headers: {Host: "%7B%22Host%22:%22138.197.165.31%22%7D"}}, udp: true}
-  - {name: "|54.81Mb", server: 155.138.140.189, port: 21008, type: vmess, uuid: 80b5645a-86b7-48af-9252-977ba807a338, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: github.com/freefq - 美国加利福尼亚州费利蒙Linode数据中心 59, server: au2.3320.top, port: 443, type: vmess, uuid: 753780ad-c282-4d82-b49b-65ad43533e1a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: au2.3320.top}}, udp: true}
-  - {name: github.com/freefq - 英国伦敦Linode数据中心 45, server: uk2.3320.top, port: 443, type: vmess, uuid: 6cc27d4f-074c-430d-a3a1-64724db55ab5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: uk2.3320.top}}, udp: true}
-  - {name: github.com/freefq - 英国伦敦DigitalOcean数据中心 44, server: 165.227.231.254, port: 8080, type: vmess, uuid: 826b8d0a-e0d3-407a-927d-19953c170779, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /cctv13/hd.m3u8, headers: {Host: 165.227.231.254}}, udp: true}
-  - {name: github.com/freefq - 美国  32, server: 68.183.129.197, port: 8080, type: vmess, uuid: 0c7caa09-5c69-42dc-8048-8e8b0d7efd4a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /cctv13/hd.m3u8, headers: {Host: 68.183.129.197}}, udp: true}
-  - {name: "| 7.54Mb", server: 106.55.234.95, port: 31372, type: vmess, uuid: 374d3519-455c-45b8-e3b1-0e2e9fcf4411, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: github.com/freefq - 美国  23, server: 68.183.129.197, port: 8080, type: vmess, uuid: 157ab24c-2f02-44d2-b211-6d70612c9f64, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /cctv13/hd.m3u8, headers: {Host: 68.183.129.197}}, udp: true}
-  - {name: github.com/freefq - 美国  28, server: 68.183.129.197, port: 8080, type: vmess, uuid: d019484c-2181-4d4a-a0fb-302a55351156, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /cctv13/hd.m3u8, headers: {Host: 68.183.129.197}}, udp: true}
-  - {name: github.com/freefq - 英国伦敦DigitalOcean数据中心 46, server: 165.227.231.254, port: 8080, type: vmess, uuid: bcaf6b8f-0acb-4ffd-86ad-8f13e7dfe436, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /cctv13/hd.m3u8, headers: {Host: 165.227.231.254}}, udp: true}
-  - {name: 美国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体低速, server: kr.wangfuzheng.top, port: 443, type: vmess, uuid: 47d0be27-bb7f-48a7-bf9f-c7f8a9f3de24, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: kr.wangfuzheng.top}}, udp: true}
-  - {name: github.com/freefq - 英国伦敦DigitalOcean数据中心 54, server: 165.227.231.254, port: 8080, type: vmess, uuid: 0c7caa09-5c69-42dc-8048-8e8b0d7efd4a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /cctv13/hd.m3u8, headers: {Host: 165.227.231.254}}, udp: true}
-  - {name: 韩国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体, server: kr.wangfuzheng.top, port: 443, type: vmess, uuid: 47d0be27-bb7f-48a7-bf9f-c7f8a9f3de24, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: kr.wangfuzheng.top}}, udp: true}
-  - {name: IEPL-香港A, server: rf99fw6f.a9sd8dns.vip, port: 40207, type: vmess, uuid: ed7a36ad-b201-35a4-88c4-bc36df902d11, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /test, headers: {Host: map.baidu.com}}, udp: true}
-  - {name: IEPL-香港B, server: rf99fw6f.a9sd8dns.vip, port: 40209, type: vmess, uuid: 7e744f5f-9f8c-3aaf-940f-719d4dba3924, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /test, headers: {Host: map.baidu.com}}, udp: true}
-  - {name: IEPL-香港D, server: rf99fw6f.a9sd8dns.vip, port: 40215, type: vmess, uuid: e0d379eb-6bf6-3219-a814-0aa5706b00d6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /test, headers: {Host: map.baidu.com}}, udp: true}
+  - {name: GetAFreeNode-Tokyo, server: 103.173.178.110, port: 41443, type: vmess, uuid: BFC2561D-7CBF-845A-5CAB-048372FC3A0F, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: FR 法国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体, server: 190.93.246.145, port: 443, type: vmess, uuid: 94887268-f3cb-48be-ade3-87d42faae3e4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: m5.v2rayfree1.xyz}}, udp: true}
+  - {name: FR 法国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体 2, server: 141.101.114.120, port: 443, type: vmess, uuid: 94887268-f3cb-48be-ade3-87d42faae3e4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: m5.v2rayfree1.xyz}}, udp: true}
+  - {name: GetAFreeNode-LosAngeles, server: 88.210.37.106, port: 41443, type: vmess, uuid: BFC2561D-7CBF-845A-5CAB-048372FC3A0F, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: GetAFreeNode-Frankfurt, server: 213.226.71.174, port: 41443, type: vmess, uuid: BFC2561D-7CBF-845A-5CAB-048372FC3A0F, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: KR 韩国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体, server: kr.wangfuzheng.top, port: 443, type: vmess, uuid: 47d0be27-bb7f-48a7-bf9f-c7f8a9f3de24, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: kr.wangfuzheng.top}}, udp: true}
+  - {name: GetAFreeNode-NewYork, server: 149.57.218.16, port: 41443, type: vmess, uuid: BFC2561D-7CBF-845A-5CAB-048372FC3A0F, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: GetAFreeNode-Krasnoyarsk, server: 91.230.211.4, port: 41443, type: vmess, uuid: BFC2561D-7CBF-845A-5CAB-048372FC3A0F, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: GetAFreeNode-Vienna, server: 94.177.8.87, port: 41443, type: vmess, uuid: BFC2561D-7CBF-845A-5CAB-048372FC3A0F, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 美国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体, server: 138.197.165.31, port: 8080, type: vmess, uuid: 2ed609d0-7467-471b-94a9-34a734ccc40a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /cctv13/hd.m3u8, headers: {Host: "%7B%22Host%22:%22138.197.165.31%22%7D"}}, udp: true}
+  - {name: US 美国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体, server: vde2.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /chat, headers: {Host: vde2.0bad.com}}, udp: true}
+  - {name: VPN-for-China-->xeton.co, server: 185.194.30.40, port: 41443, type: vmess, uuid: BFC2561D-7CBF-845A-5CAB-048372FC3A0F, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: IR 伊朗📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体, server: ojje-laowang.apps.ir-thr-at1.arvan.run, port: 443, type: vmess, uuid: 2112b632-fb6c-4781-bb42-d4d310aa532f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /laowang, headers: {Host: ojje-laowang.apps.ir-thr-at1.arvan.run}}, udp: true}
+  - {name: 美国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体 2, server: 138.197.165.31, port: 8080, type: vmess, uuid: 0c7caa09-5c69-42dc-8048-8e8b0d7efd4a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /cctv13/hd.m3u8, headers: {Host: "%7B%22Host%22:%22138.197.165.31%22%7D"}}, udp: true}
+  - {name: 欧洲📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体, server: 123.253.32.50, port: 31372, type: vmess, uuid: 678d0d7d-c651-4ae1-ced1-320783565749, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: VPN-For-China-->milkcat.net, server: seoul.napsternetv.com, port: 443, type: vmess, uuid: BFC2561D-7CBF-845A-5CAB-048372FC3A0F, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: seoul.napsternetv.com}}, udp: true}
+  - {name: US 美国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体 2, server: 42.186.175.8, port: 443, type: vmess, uuid: c19b138c-6e30-43b4-f66d-a94c6e869d12, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: usarm.ptuu.cf}}, udp: true}
   - {name: IEPL-香港C, server: rf99fw6f.a9sd8dns.vip, port: 40213, type: vmess, uuid: a462a372-0a92-37e0-bd45-1c676ed32a2d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /test, headers: {Host: map.baidu.com}}, udp: true}
-  - {name: 台湾A, server: 9r5arw6f.a9sd8dns.vip, port: 40226, type: vmess, uuid: 7e744f5f-9f8c-3aaf-940f-719d4dba3924, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /test, headers: {Host: map.baidu.com}}, udp: true}
-  - {name: 台湾B, server: 9r5arw6f.a9sd8dns.vip, port: 40227, type: vmess, uuid: 7e744f5f-9f8c-3aaf-940f-719d4dba3924, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /test, headers: {Host: map.baidu.com}}, udp: true}
+  - {name: IEPL-香港B, server: rf99fw6f.a9sd8dns.vip, port: 40209, type: vmess, uuid: 7e744f5f-9f8c-3aaf-940f-719d4dba3924, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /test, headers: {Host: map.baidu.com}}, udp: true}
+  - {name: 【达拉斯2】不限流4元G口VPS-TG@whoareyou141, server: dal2.3320.top, port: 443, type: vmess, uuid: feffbcdf-40d4-49cc-a8d3-9fa8872c50c4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: dal2.3320.top}}, udp: true}
+  - {name: 【加拿大1】不限流4元G口VPS-TG@whoareyou141, server: ca1.3320.top, port: 443, type: vmess, uuid: 0a303c5e-676e-446c-bc9b-1052b59a7499, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ca1.3320.top}}, udp: true}
+  - {name: github.com/freefq - 美国纽约市DigitalOcean云公司 31, server: 138.197.165.31, port: 8080, type: vmess, uuid: 2ed609d0-7467-471b-94a9-34a734ccc40a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /cctv13/hd.m3u8, headers: {Host: "%7B%22Host%22:%22138.197.165.31%22%7D"}}, udp: true}
+  - {name: github.com/freefq - 英国伦敦DigitalOcean数据中心 54, server: 165.227.231.254, port: 8080, type: vmess, uuid: 0c7caa09-5c69-42dc-8048-8e8b0d7efd4a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /cctv13/hd.m3u8, headers: {Host: 165.227.231.254}}, udp: true}
+  - {name: github.com/freefq - 美国纽约市DigitalOcean云公司 26, server: 138.197.165.31, port: 8080, type: vmess, uuid: 0c7caa09-5c69-42dc-8048-8e8b0d7efd4a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /cctv13/hd.m3u8, headers: {Host: "%7B%22Host%22:%22138.197.165.31%22%7D"}}, udp: true}
+  - {name: github.com/freefq - 英国伦敦DigitalOcean数据中心 44, server: 165.227.231.254, port: 8080, type: vmess, uuid: 826b8d0a-e0d3-407a-927d-19953c170779, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /cctv13/hd.m3u8, headers: {Host: 165.227.231.254}}, udp: true}
+  - {name: "| 7.54Mb", server: 106.55.234.95, port: 31372, type: vmess, uuid: 374d3519-455c-45b8-e3b1-0e2e9fcf4411, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 【德国1】不限流4元G口VPS-TG@whoareyou141, server: de1.3320.top, port: 443, type: vmess, uuid: 8253d710-f3b5-4f73-9cb0-66e1dd2fef48, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: de1.3320.top}}, udp: true}
+  - {name: 韩国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体, server: kr.wangfuzheng.top, port: 443, type: vmess, uuid: 47d0be27-bb7f-48a7-bf9f-c7f8a9f3de24, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: kr.wangfuzheng.top}}, udp: true}
+  - {name: 美国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体低速, server: kr.wangfuzheng.top, port: 443, type: vmess, uuid: 47d0be27-bb7f-48a7-bf9f-c7f8a9f3de24, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: kr.wangfuzheng.top}}, udp: true}
+  - {name: "二十大开会推荐:https://reborn.kaochang.ltd/#/register?code=mRR05Mim", server: 18.141.247.160, port: 80, type: vmess, uuid: 3d0af437-dd69-4ee5-812f-87c36962b9f9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: "二十大开会推荐:https://reborn.kaochang.ltd/#/register?code=mRR05Mim 2", server: usz2.1yuanfly.live, port: 32399, type: vmess, uuid: 3e1f44f3-3b65-3d51-869a-8f34ee89673f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: "CDN公益节点 高速节点: https://src.rest", server: 188.114.97.110, port: 443, type: vmess, uuid: 9e6ceeff-2546-3690-ac00-6fcdf31dec94, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: v2fly.samrt.website, network: ws, ws-opts: {path: /chcar, headers: {Host: v2fly.samrt.website}}, udp: true}
+  - {name: "二十大开会推荐:https://reborn.kaochang.ltd/#/register?code=mRR05Mim 3", server: 158.247.223.123, port: 10020, type: vmess, uuid: f1f45005-f074-430b-a4db-7109f50c3bce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN2中转 韩国
-      - BGP国内专线中转 日本
-      - 日本 原生IP
-      - github.com/freefq - 美国  3
-      - 俄罗斯晚高峰8K流媒体
-      - github.com/freefq - 美国纽约市DigitalOcean云公司 26
-      - github.com/freefq - 美国纽约市DigitalOcean云公司 30
-      - github.com/freefq - 美国纽约市DigitalOcean云公司 31
-      - "|54.81Mb"
-      - github.com/freefq - 美国加利福尼亚州费利蒙Linode数据中心 59
-      - github.com/freefq - 英国伦敦Linode数据中心 45
-      - github.com/freefq - 英国伦敦DigitalOcean数据中心 44
-      - github.com/freefq - 美国  32
-      - "| 7.54Mb"
-      - github.com/freefq - 美国  23
-      - github.com/freefq - 美国  28
-      - github.com/freefq - 英国伦敦DigitalOcean数据中心 46
-      - 美国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体低速
-      - github.com/freefq - 英国伦敦DigitalOcean数据中心 54
-      - 韩国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体
-      - IEPL-香港A
-      - IEPL-香港B
-      - IEPL-香港D
+      - GetAFreeNode-Tokyo
+      - FR 法国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体
+      - FR 法国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体 2
+      - GetAFreeNode-LosAngeles
+      - GetAFreeNode-Frankfurt
+      - KR 韩国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体
+      - GetAFreeNode-NewYork
+      - GetAFreeNode-Krasnoyarsk
+      - GetAFreeNode-Vienna
+      - 美国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体
+      - US 美国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体
+      - VPN-for-China-->xeton.co
+      - IR 伊朗📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体
+      - 美国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体 2
+      - 欧洲📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体
+      - VPN-For-China-->milkcat.net
+      - US 美国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体 2
       - IEPL-香港C
-      - 台湾A
-      - 台湾B
+      - IEPL-香港B
+      - 【达拉斯2】不限流4元G口VPS-TG@whoareyou141
+      - 【加拿大1】不限流4元G口VPS-TG@whoareyou141
+      - github.com/freefq - 美国纽约市DigitalOcean云公司 31
+      - github.com/freefq - 英国伦敦DigitalOcean数据中心 54
+      - github.com/freefq - 美国纽约市DigitalOcean云公司 26
+      - github.com/freefq - 英国伦敦DigitalOcean数据中心 44
+      - "| 7.54Mb"
+      - 【德国1】不限流4元G口VPS-TG@whoareyou141
+      - 韩国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体
+      - 美国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体低速
+      - 二十大开会推荐:https://reborn.kaochang.ltd/#/register?code=mRR05Mim
+      - 二十大开会推荐:https://reborn.kaochang.ltd/#/register?code=mRR05Mim 2
+      - "CDN公益节点 高速节点: https://src.rest"
+      - 二十大开会推荐:https://reborn.kaochang.ltd/#/register?code=mRR05Mim 3
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - CN2中转 韩国
-      - BGP国内专线中转 日本
-      - 日本 原生IP
-      - github.com/freefq - 美国  3
-      - 俄罗斯晚高峰8K流媒体
-      - github.com/freefq - 美国纽约市DigitalOcean云公司 26
-      - github.com/freefq - 美国纽约市DigitalOcean云公司 30
-      - github.com/freefq - 美国纽约市DigitalOcean云公司 31
-      - "|54.81Mb"
-      - github.com/freefq - 美国加利福尼亚州费利蒙Linode数据中心 59
-      - github.com/freefq - 英国伦敦Linode数据中心 45
-      - github.com/freefq - 英国伦敦DigitalOcean数据中心 44
-      - github.com/freefq - 美国  32
-      - "| 7.54Mb"
-      - github.com/freefq - 美国  23
-      - github.com/freefq - 美国  28
-      - github.com/freefq - 英国伦敦DigitalOcean数据中心 46
-      - 美国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体低速
-      - github.com/freefq - 英国伦敦DigitalOcean数据中心 54
-      - 韩国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体
-      - IEPL-香港A
-      - IEPL-香港B
-      - IEPL-香港D
+      - GetAFreeNode-Tokyo
+      - FR 法国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体
+      - FR 法国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体 2
+      - GetAFreeNode-LosAngeles
+      - GetAFreeNode-Frankfurt
+      - KR 韩国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体
+      - GetAFreeNode-NewYork
+      - GetAFreeNode-Krasnoyarsk
+      - GetAFreeNode-Vienna
+      - 美国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体
+      - US 美国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体
+      - VPN-for-China-->xeton.co
+      - IR 伊朗📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体
+      - 美国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体 2
+      - 欧洲📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体
+      - VPN-For-China-->milkcat.net
+      - US 美国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体 2
       - IEPL-香港C
-      - 台湾A
-      - 台湾B
+      - IEPL-香港B
+      - 【达拉斯2】不限流4元G口VPS-TG@whoareyou141
+      - 【加拿大1】不限流4元G口VPS-TG@whoareyou141
+      - github.com/freefq - 美国纽约市DigitalOcean云公司 31
+      - github.com/freefq - 英国伦敦DigitalOcean数据中心 54
+      - github.com/freefq - 美国纽约市DigitalOcean云公司 26
+      - github.com/freefq - 英国伦敦DigitalOcean数据中心 44
+      - "| 7.54Mb"
+      - 【德国1】不限流4元G口VPS-TG@whoareyou141
+      - 韩国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体
+      - 美国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体低速
+      - 二十大开会推荐:https://reborn.kaochang.ltd/#/register?code=mRR05Mim
+      - 二十大开会推荐:https://reborn.kaochang.ltd/#/register?code=mRR05Mim 2
+      - "CDN公益节点 高速节点: https://src.rest"
+      - 二十大开会推荐:https://reborn.kaochang.ltd/#/register?code=mRR05Mim 3
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN2中转 韩国
-      - BGP国内专线中转 日本
-      - 日本 原生IP
-      - github.com/freefq - 美国  3
-      - 俄罗斯晚高峰8K流媒体
-      - github.com/freefq - 美国纽约市DigitalOcean云公司 26
-      - github.com/freefq - 美国纽约市DigitalOcean云公司 30
-      - github.com/freefq - 美国纽约市DigitalOcean云公司 31
-      - "|54.81Mb"
-      - github.com/freefq - 美国加利福尼亚州费利蒙Linode数据中心 59
-      - github.com/freefq - 英国伦敦Linode数据中心 45
-      - github.com/freefq - 英国伦敦DigitalOcean数据中心 44
-      - github.com/freefq - 美国  32
-      - "| 7.54Mb"
-      - github.com/freefq - 美国  23
-      - github.com/freefq - 美国  28
-      - github.com/freefq - 英国伦敦DigitalOcean数据中心 46
-      - 美国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体低速
-      - github.com/freefq - 英国伦敦DigitalOcean数据中心 54
-      - 韩国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体
-      - IEPL-香港A
-      - IEPL-香港B
-      - IEPL-香港D
+      - GetAFreeNode-Tokyo
+      - FR 法国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体
+      - FR 法国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体 2
+      - GetAFreeNode-LosAngeles
+      - GetAFreeNode-Frankfurt
+      - KR 韩国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体
+      - GetAFreeNode-NewYork
+      - GetAFreeNode-Krasnoyarsk
+      - GetAFreeNode-Vienna
+      - 美国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体
+      - US 美国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体
+      - VPN-for-China-->xeton.co
+      - IR 伊朗📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体
+      - 美国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体 2
+      - 欧洲📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体
+      - VPN-For-China-->milkcat.net
+      - US 美国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体 2
       - IEPL-香港C
-      - 台湾A
-      - 台湾B
+      - IEPL-香港B
+      - 【达拉斯2】不限流4元G口VPS-TG@whoareyou141
+      - 【加拿大1】不限流4元G口VPS-TG@whoareyou141
+      - github.com/freefq - 美国纽约市DigitalOcean云公司 31
+      - github.com/freefq - 英国伦敦DigitalOcean数据中心 54
+      - github.com/freefq - 美国纽约市DigitalOcean云公司 26
+      - github.com/freefq - 英国伦敦DigitalOcean数据中心 44
+      - "| 7.54Mb"
+      - 【德国1】不限流4元G口VPS-TG@whoareyou141
+      - 韩国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体
+      - 美国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体低速
+      - 二十大开会推荐:https://reborn.kaochang.ltd/#/register?code=mRR05Mim
+      - 二十大开会推荐:https://reborn.kaochang.ltd/#/register?code=mRR05Mim 2
+      - "CDN公益节点 高速节点: https://src.rest"
+      - 二十大开会推荐:https://reborn.kaochang.ltd/#/register?code=mRR05Mim 3
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -144,137 +172,161 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN2中转 韩国
-      - BGP国内专线中转 日本
-      - 日本 原生IP
-      - github.com/freefq - 美国  3
-      - 俄罗斯晚高峰8K流媒体
-      - github.com/freefq - 美国纽约市DigitalOcean云公司 26
-      - github.com/freefq - 美国纽约市DigitalOcean云公司 30
-      - github.com/freefq - 美国纽约市DigitalOcean云公司 31
-      - "|54.81Mb"
-      - github.com/freefq - 美国加利福尼亚州费利蒙Linode数据中心 59
-      - github.com/freefq - 英国伦敦Linode数据中心 45
-      - github.com/freefq - 英国伦敦DigitalOcean数据中心 44
-      - github.com/freefq - 美国  32
-      - "| 7.54Mb"
-      - github.com/freefq - 美国  23
-      - github.com/freefq - 美国  28
-      - github.com/freefq - 英国伦敦DigitalOcean数据中心 46
-      - 美国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体低速
-      - github.com/freefq - 英国伦敦DigitalOcean数据中心 54
-      - 韩国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体
-      - IEPL-香港A
-      - IEPL-香港B
-      - IEPL-香港D
+      - GetAFreeNode-Tokyo
+      - FR 法国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体
+      - FR 法国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体 2
+      - GetAFreeNode-LosAngeles
+      - GetAFreeNode-Frankfurt
+      - KR 韩国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体
+      - GetAFreeNode-NewYork
+      - GetAFreeNode-Krasnoyarsk
+      - GetAFreeNode-Vienna
+      - 美国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体
+      - US 美国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体
+      - VPN-for-China-->xeton.co
+      - IR 伊朗📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体
+      - 美国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体 2
+      - 欧洲📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体
+      - VPN-For-China-->milkcat.net
+      - US 美国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体 2
       - IEPL-香港C
-      - 台湾A
-      - 台湾B
+      - IEPL-香港B
+      - 【达拉斯2】不限流4元G口VPS-TG@whoareyou141
+      - 【加拿大1】不限流4元G口VPS-TG@whoareyou141
+      - github.com/freefq - 美国纽约市DigitalOcean云公司 31
+      - github.com/freefq - 英国伦敦DigitalOcean数据中心 54
+      - github.com/freefq - 美国纽约市DigitalOcean云公司 26
+      - github.com/freefq - 英国伦敦DigitalOcean数据中心 44
+      - "| 7.54Mb"
+      - 【德国1】不限流4元G口VPS-TG@whoareyou141
+      - 韩国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体
+      - 美国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体低速
+      - 二十大开会推荐:https://reborn.kaochang.ltd/#/register?code=mRR05Mim
+      - 二十大开会推荐:https://reborn.kaochang.ltd/#/register?code=mRR05Mim 2
+      - "CDN公益节点 高速节点: https://src.rest"
+      - 二十大开会推荐:https://reborn.kaochang.ltd/#/register?code=mRR05Mim 3
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - IEPL-香港A
-      - IEPL-香港B
-      - IEPL-香港D
       - IEPL-香港C
-      - 台湾A
-      - 台湾B
+      - IEPL-香港B
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - CN2中转 韩国
-      - BGP国内专线中转 日本
-      - 日本 原生IP
-      - github.com/freefq - 美国  3
-      - 俄罗斯晚高峰8K流媒体
-      - github.com/freefq - 美国纽约市DigitalOcean云公司 26
-      - github.com/freefq - 美国纽约市DigitalOcean云公司 30
-      - github.com/freefq - 美国纽约市DigitalOcean云公司 31
-      - "|54.81Mb"
-      - github.com/freefq - 美国加利福尼亚州费利蒙Linode数据中心 59
-      - github.com/freefq - 英国伦敦Linode数据中心 45
-      - github.com/freefq - 英国伦敦DigitalOcean数据中心 44
-      - github.com/freefq - 美国  32
-      - "| 7.54Mb"
-      - github.com/freefq - 美国  23
-      - github.com/freefq - 美国  28
-      - github.com/freefq - 英国伦敦DigitalOcean数据中心 46
-      - 美国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体低速
-      - github.com/freefq - 英国伦敦DigitalOcean数据中心 54
-      - 韩国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体
-      - IEPL-香港A
-      - IEPL-香港B
-      - IEPL-香港D
+      - GetAFreeNode-Tokyo
+      - FR 法国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体
+      - FR 法国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体 2
+      - GetAFreeNode-LosAngeles
+      - GetAFreeNode-Frankfurt
+      - KR 韩国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体
+      - GetAFreeNode-NewYork
+      - GetAFreeNode-Krasnoyarsk
+      - GetAFreeNode-Vienna
+      - 美国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体
+      - US 美国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体
+      - VPN-for-China-->xeton.co
+      - IR 伊朗📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体
+      - 美国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体 2
+      - 欧洲📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体
+      - VPN-For-China-->milkcat.net
+      - US 美国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体 2
       - IEPL-香港C
-      - 台湾A
-      - 台湾B
+      - IEPL-香港B
+      - 【达拉斯2】不限流4元G口VPS-TG@whoareyou141
+      - 【加拿大1】不限流4元G口VPS-TG@whoareyou141
+      - github.com/freefq - 美国纽约市DigitalOcean云公司 31
+      - github.com/freefq - 英国伦敦DigitalOcean数据中心 54
+      - github.com/freefq - 美国纽约市DigitalOcean云公司 26
+      - github.com/freefq - 英国伦敦DigitalOcean数据中心 44
+      - "| 7.54Mb"
+      - 【德国1】不限流4元G口VPS-TG@whoareyou141
+      - 韩国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体
+      - 美国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体低速
+      - 二十大开会推荐:https://reborn.kaochang.ltd/#/register?code=mRR05Mim
+      - 二十大开会推荐:https://reborn.kaochang.ltd/#/register?code=mRR05Mim 2
+      - "CDN公益节点 高速节点: https://src.rest"
+      - 二十大开会推荐:https://reborn.kaochang.ltd/#/register?code=mRR05Mim 3
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - CN2中转 韩国
-      - BGP国内专线中转 日本
-      - 日本 原生IP
-      - github.com/freefq - 美国  3
-      - 俄罗斯晚高峰8K流媒体
-      - github.com/freefq - 美国纽约市DigitalOcean云公司 26
-      - github.com/freefq - 美国纽约市DigitalOcean云公司 30
-      - github.com/freefq - 美国纽约市DigitalOcean云公司 31
-      - "|54.81Mb"
-      - github.com/freefq - 美国加利福尼亚州费利蒙Linode数据中心 59
-      - github.com/freefq - 英国伦敦Linode数据中心 45
-      - github.com/freefq - 英国伦敦DigitalOcean数据中心 44
-      - github.com/freefq - 美国  32
-      - "| 7.54Mb"
-      - github.com/freefq - 美国  23
-      - github.com/freefq - 美国  28
-      - github.com/freefq - 英国伦敦DigitalOcean数据中心 46
-      - 美国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体低速
-      - github.com/freefq - 英国伦敦DigitalOcean数据中心 54
-      - 韩国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体
-      - IEPL-香港A
-      - IEPL-香港B
-      - IEPL-香港D
+      - GetAFreeNode-Tokyo
+      - FR 法国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体
+      - FR 法国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体 2
+      - GetAFreeNode-LosAngeles
+      - GetAFreeNode-Frankfurt
+      - KR 韩国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体
+      - GetAFreeNode-NewYork
+      - GetAFreeNode-Krasnoyarsk
+      - GetAFreeNode-Vienna
+      - 美国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体
+      - US 美国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体
+      - VPN-for-China-->xeton.co
+      - IR 伊朗📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体
+      - 美国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体 2
+      - 欧洲📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体
+      - VPN-For-China-->milkcat.net
+      - US 美国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体 2
       - IEPL-香港C
-      - 台湾A
-      - 台湾B
+      - IEPL-香港B
+      - 【达拉斯2】不限流4元G口VPS-TG@whoareyou141
+      - 【加拿大1】不限流4元G口VPS-TG@whoareyou141
+      - github.com/freefq - 美国纽约市DigitalOcean云公司 31
+      - github.com/freefq - 英国伦敦DigitalOcean数据中心 54
+      - github.com/freefq - 美国纽约市DigitalOcean云公司 26
+      - github.com/freefq - 英国伦敦DigitalOcean数据中心 44
+      - "| 7.54Mb"
+      - 【德国1】不限流4元G口VPS-TG@whoareyou141
+      - 韩国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体
+      - 美国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体低速
+      - 二十大开会推荐:https://reborn.kaochang.ltd/#/register?code=mRR05Mim
+      - 二十大开会推荐:https://reborn.kaochang.ltd/#/register?code=mRR05Mim 2
+      - "CDN公益节点 高速节点: https://src.rest"
+      - 二十大开会推荐:https://reborn.kaochang.ltd/#/register?code=mRR05Mim 3
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CN2中转 韩国
-      - BGP国内专线中转 日本
-      - 日本 原生IP
-      - github.com/freefq - 美国  3
-      - 俄罗斯晚高峰8K流媒体
-      - github.com/freefq - 美国纽约市DigitalOcean云公司 26
-      - github.com/freefq - 美国纽约市DigitalOcean云公司 30
-      - github.com/freefq - 美国纽约市DigitalOcean云公司 31
-      - "|54.81Mb"
-      - github.com/freefq - 美国加利福尼亚州费利蒙Linode数据中心 59
-      - github.com/freefq - 英国伦敦Linode数据中心 45
-      - github.com/freefq - 英国伦敦DigitalOcean数据中心 44
-      - github.com/freefq - 美国  32
-      - "| 7.54Mb"
-      - github.com/freefq - 美国  23
-      - github.com/freefq - 美国  28
-      - github.com/freefq - 英国伦敦DigitalOcean数据中心 46
-      - 美国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体低速
-      - github.com/freefq - 英国伦敦DigitalOcean数据中心 54
-      - 韩国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体
-      - IEPL-香港A
-      - IEPL-香港B
-      - IEPL-香港D
+      - GetAFreeNode-Tokyo
+      - FR 法国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体
+      - FR 法国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体 2
+      - GetAFreeNode-LosAngeles
+      - GetAFreeNode-Frankfurt
+      - KR 韩国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体
+      - GetAFreeNode-NewYork
+      - GetAFreeNode-Krasnoyarsk
+      - GetAFreeNode-Vienna
+      - 美国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体
+      - US 美国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体
+      - VPN-for-China-->xeton.co
+      - IR 伊朗📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体
+      - 美国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体 2
+      - 欧洲📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体
+      - VPN-For-China-->milkcat.net
+      - US 美国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体 2
       - IEPL-香港C
-      - 台湾A
-      - 台湾B
+      - IEPL-香港B
+      - 【达拉斯2】不限流4元G口VPS-TG@whoareyou141
+      - 【加拿大1】不限流4元G口VPS-TG@whoareyou141
+      - github.com/freefq - 美国纽约市DigitalOcean云公司 31
+      - github.com/freefq - 英国伦敦DigitalOcean数据中心 54
+      - github.com/freefq - 美国纽约市DigitalOcean云公司 26
+      - github.com/freefq - 英国伦敦DigitalOcean数据中心 44
+      - "| 7.54Mb"
+      - 【德国1】不限流4元G口VPS-TG@whoareyou141
+      - 韩国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体
+      - 美国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体低速
+      - 二十大开会推荐:https://reborn.kaochang.ltd/#/register?code=mRR05Mim
+      - 二十大开会推荐:https://reborn.kaochang.ltd/#/register?code=mRR05Mim 2
+      - "CDN公益节点 高速节点: https://src.rest"
+      - 二十大开会推荐:https://reborn.kaochang.ltd/#/register?code=mRR05Mim 3
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -290,32 +342,39 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CN2中转 韩国
-      - BGP国内专线中转 日本
-      - 日本 原生IP
-      - github.com/freefq - 美国  3
-      - 俄罗斯晚高峰8K流媒体
-      - github.com/freefq - 美国纽约市DigitalOcean云公司 26
-      - github.com/freefq - 美国纽约市DigitalOcean云公司 30
-      - github.com/freefq - 美国纽约市DigitalOcean云公司 31
-      - "|54.81Mb"
-      - github.com/freefq - 美国加利福尼亚州费利蒙Linode数据中心 59
-      - github.com/freefq - 英国伦敦Linode数据中心 45
-      - github.com/freefq - 英国伦敦DigitalOcean数据中心 44
-      - github.com/freefq - 美国  32
-      - "| 7.54Mb"
-      - github.com/freefq - 美国  23
-      - github.com/freefq - 美国  28
-      - github.com/freefq - 英国伦敦DigitalOcean数据中心 46
-      - 美国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体低速
-      - github.com/freefq - 英国伦敦DigitalOcean数据中心 54
-      - 韩国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体
-      - IEPL-香港A
-      - IEPL-香港B
-      - IEPL-香港D
+      - GetAFreeNode-Tokyo
+      - FR 法国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体
+      - FR 法国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体 2
+      - GetAFreeNode-LosAngeles
+      - GetAFreeNode-Frankfurt
+      - KR 韩国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体
+      - GetAFreeNode-NewYork
+      - GetAFreeNode-Krasnoyarsk
+      - GetAFreeNode-Vienna
+      - 美国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体
+      - US 美国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体
+      - VPN-for-China-->xeton.co
+      - IR 伊朗📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体
+      - 美国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体 2
+      - 欧洲📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体
+      - VPN-For-China-->milkcat.net
+      - US 美国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体 2
       - IEPL-香港C
-      - 台湾A
-      - 台湾B
+      - IEPL-香港B
+      - 【达拉斯2】不限流4元G口VPS-TG@whoareyou141
+      - 【加拿大1】不限流4元G口VPS-TG@whoareyou141
+      - github.com/freefq - 美国纽约市DigitalOcean云公司 31
+      - github.com/freefq - 英国伦敦DigitalOcean数据中心 54
+      - github.com/freefq - 美国纽约市DigitalOcean云公司 26
+      - github.com/freefq - 英国伦敦DigitalOcean数据中心 44
+      - "| 7.54Mb"
+      - 【德国1】不限流4元G口VPS-TG@whoareyou141
+      - 韩国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体
+      - 美国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体低速
+      - 二十大开会推荐:https://reborn.kaochang.ltd/#/register?code=mRR05Mim
+      - 二十大开会推荐:https://reborn.kaochang.ltd/#/register?code=mRR05Mim 2
+      - "CDN公益节点 高速节点: https://src.rest"
+      - 二十大开会推荐:https://reborn.kaochang.ltd/#/register?code=mRR05Mim 3
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
