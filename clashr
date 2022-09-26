@@ -5,95 +5,107 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
+  - {name: IEPL-香港C, server: rf99fw6f.a9sd8dns.vip, port: 40213, type: vmess, uuid: a462a372-0a92-37e0-bd45-1c676ed32a2d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /test, headers: {Host: map.baidu.com}}, udp: true}
+  - {name: github.com/freefq - 新加坡Amazon数据中心 22, server: secondsite.auth123.email, port: 46933, type: vmess, uuid: 7446e9a8-2428-4663-bfbc-581dedd1b2cb, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
   - {name: "二十大开会推荐:https://reborn.kaochang.ltd/#/register?code=mRR05Mim", server: 18.141.247.160, port: 80, type: vmess, uuid: 3d0af437-dd69-4ee5-812f-87c36962b9f9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
   - {name: FR 法国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体, server: 141.101.114.120, port: 443, type: vmess, uuid: 94887268-f3cb-48be-ade3-87d42faae3e4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: m5.v2rayfree1.xyz}}, udp: true}
-  - {name: GetAFreeNode-Frankfurt, server: 213.226.71.174, port: 41443, type: vmess, uuid: BFC2561D-7CBF-845A-5CAB-048372FC3A0F, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: GetAFreeNode-Vienna, server: 94.177.8.87, port: 41443, type: vmess, uuid: BFC2561D-7CBF-845A-5CAB-048372FC3A0F, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: "CDN公益节点 高速节点: https://src.rest", server: 188.114.97.110, port: 443, type: vmess, uuid: 9e6ceeff-2546-3690-ac00-6fcdf31dec94, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: v2fly.samrt.website, network: ws, ws-opts: {path: /chcar, headers: {Host: v2fly.samrt.website}}, udp: true}
-  - {name: GetAFreeNode-NewYork, server: 149.57.218.16, port: 41443, type: vmess, uuid: BFC2561D-7CBF-845A-5CAB-048372FC3A0F, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: VPN-for-China-->xeton.co, server: 185.194.30.40, port: 41443, type: vmess, uuid: BFC2561D-7CBF-845A-5CAB-048372FC3A0F, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: "二十大开会推荐:https://reborn.kaochang.ltd/#/register?code=mRR05Mim 2", server: 158.247.223.123, port: 10020, type: vmess, uuid: f1f45005-f074-430b-a4db-7109f50c3bce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: IEPL-香港C, server: rf99fw6f.a9sd8dns.vip, port: 40213, type: vmess, uuid: a462a372-0a92-37e0-bd45-1c676ed32a2d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /test, headers: {Host: map.baidu.com}}, udp: true}
-  - {name: GetAFreeNode-Tokyo, server: 103.173.178.110, port: 41443, type: vmess, uuid: BFC2561D-7CBF-845A-5CAB-048372FC3A0F, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: "| 7.54Mb", server: 106.55.234.95, port: 31372, type: vmess, uuid: 374d3519-455c-45b8-e3b1-0e2e9fcf4411, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "二十大开会推荐:https://reborn.kaochang.ltd/#/register?code=mRR05Mim 3", server: usz2.1yuanfly.live, port: 32399, type: vmess, uuid: 3e1f44f3-3b65-3d51-869a-8f34ee89673f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: "CDN公益节点 高速节点: https://src.rest", server: 188.114.97.110, port: 443, type: vmess, uuid: 9e6ceeff-2546-3690-ac00-6fcdf31dec94, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /chcar, headers: {Host: v2fly.samrt.website}}, udp: true}
   - {name: FR 法国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体 2, server: 190.93.246.145, port: 443, type: vmess, uuid: 94887268-f3cb-48be-ade3-87d42faae3e4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: m5.v2rayfree1.xyz}}, udp: true}
-  - {name: 【日本1-IPv4】不限流4元VPS-TG@whoareyou141, server: 172.105.230.212, port: 443, type: vmess, uuid: e89cc331-813a-4897-8024-8415acd7e3ca, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: sg1.3320.top}}, udp: true}
-  - {name: 【日本2-IPv4】不限流4元VPS-TG@whoareyou141, server: 172.104.116.74, port: 443, type: vmess, uuid: e89cc331-813a-4897-8024-8415acd7e3ca, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: sg1.3320.top}}, udp: true}
+  - {name: GetAFreeNode-Frankfurt, server: 213.226.71.174, port: 41443, type: vmess, uuid: BFC2561D-7CBF-845A-5CAB-048372FC3A0F, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: "二十大开会推荐:https://reborn.kaochang.ltd/#/register?code=mRR05Mim 2", server: 158.247.223.123, port: 10020, type: vmess, uuid: f1f45005-f074-430b-a4db-7109f50c3bce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: GetAFreeNode-NewYork, server: 149.57.218.16, port: 41443, type: vmess, uuid: BFC2561D-7CBF-845A-5CAB-048372FC3A0F, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: GetAFreeNode-Vienna, server: 94.177.8.87, port: 41443, type: vmess, uuid: BFC2561D-7CBF-845A-5CAB-048372FC3A0F, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
   - {name: 【美西2-IPv4】不限流4元VPS-TG@whoareyou141, server: 104.237.158.126, port: 443, type: vmess, uuid: e89cc331-813a-4897-8024-8415acd7e3ca, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: sg1.3320.top}}, udp: true}
-  - {name: 【英国-IPv4】不限流4元VPS-TG@whoareyou141, server: 212.111.43.209, port: 443, type: vmess, uuid: e89cc331-813a-4897-8024-8415acd7e3ca, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: sg1.3320.top}}, udp: true}
+  - {name: "| 7.54Mb", server: 106.55.234.95, port: 31372, type: vmess, uuid: 374d3519-455c-45b8-e3b1-0e2e9fcf4411, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _GB_英国, server: 138.68.178.33, port: 21008, type: vmess, uuid: 80b5645a-86b7-48af-9252-977ba807a338, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 【印度-IPv4】不限流4元VPS-TG@whoareyou141, server: 45.79.125.95, port: 443, type: vmess, uuid: e89cc331-813a-4897-8024-8415acd7e3ca, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: sg1.3320.top}}, udp: true}
+  - {name: 【英国-IPv4】不限流4元VPS-TG@whoareyou141, server: 212.111.43.209, port: 443, type: vmess, uuid: e89cc331-813a-4897-8024-8415acd7e3ca, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: sg1.3320.top}}, udp: true}
+  - {name: 【日本1-IPv4】不限流4元VPS-TG@whoareyou141, server: 172.105.230.212, port: 443, type: vmess, uuid: e89cc331-813a-4897-8024-8415acd7e3ca, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: sg1.3320.top}}, udp: true}
+  - {name: GetAFreeNode-LosAngeles, server: 88.210.37.106, port: 41443, type: vmess, uuid: BFC2561D-7CBF-845A-5CAB-048372FC3A0F, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 【日本2-IPv4】不限流4元VPS-TG@whoareyou141, server: 172.104.116.74, port: 443, type: vmess, uuid: e89cc331-813a-4897-8024-8415acd7e3ca, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: sg1.3320.top}}, udp: true}
+  - {name: VPN-for-China-->xeton.co, server: 185.194.30.40, port: 41443, type: vmess, uuid: BFC2561D-7CBF-845A-5CAB-048372FC3A0F, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: GetAFreeNode-Tokyo, server: 103.173.178.110, port: 41443, type: vmess, uuid: BFC2561D-7CBF-845A-5CAB-048372FC3A0F, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 湖南省怀化市移动 23, server: 111.23.252.218, port: 52102, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
+      - IEPL-香港C
+      - github.com/freefq - 新加坡Amazon数据中心 22
       - 二十大开会推荐:https://reborn.kaochang.ltd/#/register?code=mRR05Mim
       - FR 法国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体
-      - GetAFreeNode-Frankfurt
-      - GetAFreeNode-Vienna
       - "CDN公益节点 高速节点: https://src.rest"
-      - GetAFreeNode-NewYork
-      - VPN-for-China-->xeton.co
-      - 二十大开会推荐:https://reborn.kaochang.ltd/#/register?code=mRR05Mim 2
-      - IEPL-香港C
-      - GetAFreeNode-Tokyo
-      - "| 7.54Mb"
-      - 二十大开会推荐:https://reborn.kaochang.ltd/#/register?code=mRR05Mim 3
       - FR 法国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体 2
-      - 【日本1-IPv4】不限流4元VPS-TG@whoareyou141
-      - 【日本2-IPv4】不限流4元VPS-TG@whoareyou141
+      - GetAFreeNode-Frankfurt
+      - 二十大开会推荐:https://reborn.kaochang.ltd/#/register?code=mRR05Mim 2
+      - GetAFreeNode-NewYork
+      - GetAFreeNode-Vienna
       - 【美西2-IPv4】不限流4元VPS-TG@whoareyou141
-      - 【英国-IPv4】不限流4元VPS-TG@whoareyou141
+      - "| 7.54Mb"
+      - _GB_英国
       - 【印度-IPv4】不限流4元VPS-TG@whoareyou141
+      - 【英国-IPv4】不限流4元VPS-TG@whoareyou141
+      - 【日本1-IPv4】不限流4元VPS-TG@whoareyou141
+      - GetAFreeNode-LosAngeles
+      - 【日本2-IPv4】不限流4元VPS-TG@whoareyou141
+      - VPN-for-China-->xeton.co
+      - GetAFreeNode-Tokyo
+      - github.com/freefq - 湖南省怀化市移动 23
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
+      - IEPL-香港C
+      - github.com/freefq - 新加坡Amazon数据中心 22
       - 二十大开会推荐:https://reborn.kaochang.ltd/#/register?code=mRR05Mim
       - FR 法国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体
-      - GetAFreeNode-Frankfurt
-      - GetAFreeNode-Vienna
       - "CDN公益节点 高速节点: https://src.rest"
-      - GetAFreeNode-NewYork
-      - VPN-for-China-->xeton.co
-      - 二十大开会推荐:https://reborn.kaochang.ltd/#/register?code=mRR05Mim 2
-      - IEPL-香港C
-      - GetAFreeNode-Tokyo
-      - "| 7.54Mb"
-      - 二十大开会推荐:https://reborn.kaochang.ltd/#/register?code=mRR05Mim 3
       - FR 法国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体 2
-      - 【日本1-IPv4】不限流4元VPS-TG@whoareyou141
-      - 【日本2-IPv4】不限流4元VPS-TG@whoareyou141
+      - GetAFreeNode-Frankfurt
+      - 二十大开会推荐:https://reborn.kaochang.ltd/#/register?code=mRR05Mim 2
+      - GetAFreeNode-NewYork
+      - GetAFreeNode-Vienna
       - 【美西2-IPv4】不限流4元VPS-TG@whoareyou141
-      - 【英国-IPv4】不限流4元VPS-TG@whoareyou141
+      - "| 7.54Mb"
+      - _GB_英国
       - 【印度-IPv4】不限流4元VPS-TG@whoareyou141
+      - 【英国-IPv4】不限流4元VPS-TG@whoareyou141
+      - 【日本1-IPv4】不限流4元VPS-TG@whoareyou141
+      - GetAFreeNode-LosAngeles
+      - 【日本2-IPv4】不限流4元VPS-TG@whoareyou141
+      - VPN-for-China-->xeton.co
+      - GetAFreeNode-Tokyo
+      - github.com/freefq - 湖南省怀化市移动 23
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - IEPL-香港C
+      - github.com/freefq - 新加坡Amazon数据中心 22
       - 二十大开会推荐:https://reborn.kaochang.ltd/#/register?code=mRR05Mim
       - FR 法国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体
-      - GetAFreeNode-Frankfurt
-      - GetAFreeNode-Vienna
       - "CDN公益节点 高速节点: https://src.rest"
-      - GetAFreeNode-NewYork
-      - VPN-for-China-->xeton.co
-      - 二十大开会推荐:https://reborn.kaochang.ltd/#/register?code=mRR05Mim 2
-      - IEPL-香港C
-      - GetAFreeNode-Tokyo
-      - "| 7.54Mb"
-      - 二十大开会推荐:https://reborn.kaochang.ltd/#/register?code=mRR05Mim 3
       - FR 法国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体 2
-      - 【日本1-IPv4】不限流4元VPS-TG@whoareyou141
-      - 【日本2-IPv4】不限流4元VPS-TG@whoareyou141
+      - GetAFreeNode-Frankfurt
+      - 二十大开会推荐:https://reborn.kaochang.ltd/#/register?code=mRR05Mim 2
+      - GetAFreeNode-NewYork
+      - GetAFreeNode-Vienna
       - 【美西2-IPv4】不限流4元VPS-TG@whoareyou141
-      - 【英国-IPv4】不限流4元VPS-TG@whoareyou141
+      - "| 7.54Mb"
+      - _GB_英国
       - 【印度-IPv4】不限流4元VPS-TG@whoareyou141
+      - 【英国-IPv4】不限流4元VPS-TG@whoareyou141
+      - 【日本1-IPv4】不限流4元VPS-TG@whoareyou141
+      - GetAFreeNode-LosAngeles
+      - 【日本2-IPv4】不限流4元VPS-TG@whoareyou141
+      - VPN-for-China-->xeton.co
+      - GetAFreeNode-Tokyo
+      - github.com/freefq - 湖南省怀化市移动 23
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -112,24 +124,27 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - IEPL-香港C
+      - github.com/freefq - 新加坡Amazon数据中心 22
       - 二十大开会推荐:https://reborn.kaochang.ltd/#/register?code=mRR05Mim
       - FR 法国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体
-      - GetAFreeNode-Frankfurt
-      - GetAFreeNode-Vienna
       - "CDN公益节点 高速节点: https://src.rest"
-      - GetAFreeNode-NewYork
-      - VPN-for-China-->xeton.co
-      - 二十大开会推荐:https://reborn.kaochang.ltd/#/register?code=mRR05Mim 2
-      - IEPL-香港C
-      - GetAFreeNode-Tokyo
-      - "| 7.54Mb"
-      - 二十大开会推荐:https://reborn.kaochang.ltd/#/register?code=mRR05Mim 3
       - FR 法国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体 2
-      - 【日本1-IPv4】不限流4元VPS-TG@whoareyou141
-      - 【日本2-IPv4】不限流4元VPS-TG@whoareyou141
+      - GetAFreeNode-Frankfurt
+      - 二十大开会推荐:https://reborn.kaochang.ltd/#/register?code=mRR05Mim 2
+      - GetAFreeNode-NewYork
+      - GetAFreeNode-Vienna
       - 【美西2-IPv4】不限流4元VPS-TG@whoareyou141
-      - 【英国-IPv4】不限流4元VPS-TG@whoareyou141
+      - "| 7.54Mb"
+      - _GB_英国
       - 【印度-IPv4】不限流4元VPS-TG@whoareyou141
+      - 【英国-IPv4】不限流4元VPS-TG@whoareyou141
+      - 【日本1-IPv4】不限流4元VPS-TG@whoareyou141
+      - GetAFreeNode-LosAngeles
+      - 【日本2-IPv4】不限流4元VPS-TG@whoareyou141
+      - VPN-for-China-->xeton.co
+      - GetAFreeNode-Tokyo
+      - github.com/freefq - 湖南省怀化市移动 23
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -141,71 +156,80 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
+      - IEPL-香港C
+      - github.com/freefq - 新加坡Amazon数据中心 22
       - 二十大开会推荐:https://reborn.kaochang.ltd/#/register?code=mRR05Mim
       - FR 法国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体
-      - GetAFreeNode-Frankfurt
-      - GetAFreeNode-Vienna
       - "CDN公益节点 高速节点: https://src.rest"
-      - GetAFreeNode-NewYork
-      - VPN-for-China-->xeton.co
-      - 二十大开会推荐:https://reborn.kaochang.ltd/#/register?code=mRR05Mim 2
-      - IEPL-香港C
-      - GetAFreeNode-Tokyo
-      - "| 7.54Mb"
-      - 二十大开会推荐:https://reborn.kaochang.ltd/#/register?code=mRR05Mim 3
       - FR 法国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体 2
-      - 【日本1-IPv4】不限流4元VPS-TG@whoareyou141
-      - 【日本2-IPv4】不限流4元VPS-TG@whoareyou141
+      - GetAFreeNode-Frankfurt
+      - 二十大开会推荐:https://reborn.kaochang.ltd/#/register?code=mRR05Mim 2
+      - GetAFreeNode-NewYork
+      - GetAFreeNode-Vienna
       - 【美西2-IPv4】不限流4元VPS-TG@whoareyou141
-      - 【英国-IPv4】不限流4元VPS-TG@whoareyou141
+      - "| 7.54Mb"
+      - _GB_英国
       - 【印度-IPv4】不限流4元VPS-TG@whoareyou141
+      - 【英国-IPv4】不限流4元VPS-TG@whoareyou141
+      - 【日本1-IPv4】不限流4元VPS-TG@whoareyou141
+      - GetAFreeNode-LosAngeles
+      - 【日本2-IPv4】不限流4元VPS-TG@whoareyou141
+      - VPN-for-China-->xeton.co
+      - GetAFreeNode-Tokyo
+      - github.com/freefq - 湖南省怀化市移动 23
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
+      - IEPL-香港C
+      - github.com/freefq - 新加坡Amazon数据中心 22
       - 二十大开会推荐:https://reborn.kaochang.ltd/#/register?code=mRR05Mim
       - FR 法国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体
-      - GetAFreeNode-Frankfurt
-      - GetAFreeNode-Vienna
       - "CDN公益节点 高速节点: https://src.rest"
-      - GetAFreeNode-NewYork
-      - VPN-for-China-->xeton.co
-      - 二十大开会推荐:https://reborn.kaochang.ltd/#/register?code=mRR05Mim 2
-      - IEPL-香港C
-      - GetAFreeNode-Tokyo
-      - "| 7.54Mb"
-      - 二十大开会推荐:https://reborn.kaochang.ltd/#/register?code=mRR05Mim 3
       - FR 法国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体 2
-      - 【日本1-IPv4】不限流4元VPS-TG@whoareyou141
-      - 【日本2-IPv4】不限流4元VPS-TG@whoareyou141
+      - GetAFreeNode-Frankfurt
+      - 二十大开会推荐:https://reborn.kaochang.ltd/#/register?code=mRR05Mim 2
+      - GetAFreeNode-NewYork
+      - GetAFreeNode-Vienna
       - 【美西2-IPv4】不限流4元VPS-TG@whoareyou141
-      - 【英国-IPv4】不限流4元VPS-TG@whoareyou141
+      - "| 7.54Mb"
+      - _GB_英国
       - 【印度-IPv4】不限流4元VPS-TG@whoareyou141
+      - 【英国-IPv4】不限流4元VPS-TG@whoareyou141
+      - 【日本1-IPv4】不限流4元VPS-TG@whoareyou141
+      - GetAFreeNode-LosAngeles
+      - 【日本2-IPv4】不限流4元VPS-TG@whoareyou141
+      - VPN-for-China-->xeton.co
+      - GetAFreeNode-Tokyo
+      - github.com/freefq - 湖南省怀化市移动 23
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - IEPL-香港C
+      - github.com/freefq - 新加坡Amazon数据中心 22
       - 二十大开会推荐:https://reborn.kaochang.ltd/#/register?code=mRR05Mim
       - FR 法国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体
-      - GetAFreeNode-Frankfurt
-      - GetAFreeNode-Vienna
       - "CDN公益节点 高速节点: https://src.rest"
-      - GetAFreeNode-NewYork
-      - VPN-for-China-->xeton.co
-      - 二十大开会推荐:https://reborn.kaochang.ltd/#/register?code=mRR05Mim 2
-      - IEPL-香港C
-      - GetAFreeNode-Tokyo
-      - "| 7.54Mb"
-      - 二十大开会推荐:https://reborn.kaochang.ltd/#/register?code=mRR05Mim 3
       - FR 法国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体 2
-      - 【日本1-IPv4】不限流4元VPS-TG@whoareyou141
-      - 【日本2-IPv4】不限流4元VPS-TG@whoareyou141
+      - GetAFreeNode-Frankfurt
+      - 二十大开会推荐:https://reborn.kaochang.ltd/#/register?code=mRR05Mim 2
+      - GetAFreeNode-NewYork
+      - GetAFreeNode-Vienna
       - 【美西2-IPv4】不限流4元VPS-TG@whoareyou141
-      - 【英国-IPv4】不限流4元VPS-TG@whoareyou141
+      - "| 7.54Mb"
+      - _GB_英国
       - 【印度-IPv4】不限流4元VPS-TG@whoareyou141
+      - 【英国-IPv4】不限流4元VPS-TG@whoareyou141
+      - 【日本1-IPv4】不限流4元VPS-TG@whoareyou141
+      - GetAFreeNode-LosAngeles
+      - 【日本2-IPv4】不限流4元VPS-TG@whoareyou141
+      - VPN-for-China-->xeton.co
+      - GetAFreeNode-Tokyo
+      - github.com/freefq - 湖南省怀化市移动 23
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -221,24 +245,27 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - IEPL-香港C
+      - github.com/freefq - 新加坡Amazon数据中心 22
       - 二十大开会推荐:https://reborn.kaochang.ltd/#/register?code=mRR05Mim
       - FR 法国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体
-      - GetAFreeNode-Frankfurt
-      - GetAFreeNode-Vienna
       - "CDN公益节点 高速节点: https://src.rest"
-      - GetAFreeNode-NewYork
-      - VPN-for-China-->xeton.co
-      - 二十大开会推荐:https://reborn.kaochang.ltd/#/register?code=mRR05Mim 2
-      - IEPL-香港C
-      - GetAFreeNode-Tokyo
-      - "| 7.54Mb"
-      - 二十大开会推荐:https://reborn.kaochang.ltd/#/register?code=mRR05Mim 3
       - FR 法国📔工具大师自用机场：kuaiyin.info晚高峰8K流媒体 2
-      - 【日本1-IPv4】不限流4元VPS-TG@whoareyou141
-      - 【日本2-IPv4】不限流4元VPS-TG@whoareyou141
+      - GetAFreeNode-Frankfurt
+      - 二十大开会推荐:https://reborn.kaochang.ltd/#/register?code=mRR05Mim 2
+      - GetAFreeNode-NewYork
+      - GetAFreeNode-Vienna
       - 【美西2-IPv4】不限流4元VPS-TG@whoareyou141
-      - 【英国-IPv4】不限流4元VPS-TG@whoareyou141
+      - "| 7.54Mb"
+      - _GB_英国
       - 【印度-IPv4】不限流4元VPS-TG@whoareyou141
+      - 【英国-IPv4】不限流4元VPS-TG@whoareyou141
+      - 【日本1-IPv4】不限流4元VPS-TG@whoareyou141
+      - GetAFreeNode-LosAngeles
+      - 【日本2-IPv4】不限流4元VPS-TG@whoareyou141
+      - VPN-for-China-->xeton.co
+      - GetAFreeNode-Tokyo
+      - github.com/freefq - 湖南省怀化市移动 23
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
