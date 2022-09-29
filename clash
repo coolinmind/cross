@@ -5,6 +5,9 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
+  - {name: USA 美国01 | 中转 | 1.0x | V1, server: 20.187.79.72, port: 47566, type: vmess, uuid: 3c9a9666-0ac5-3493-88cd-a4ddbe9118cf, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /zz, headers: {Host: 20.171.46.17}}, udp: true}
+  - {name: "", server: 137.175.5.161, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/350432191028, headers: {Host: www.69135978.xyz}}, udp: true}
+  - {name: 中转|Trojan|新加坡 02, server: 140.179.85.15, port: 33002, type: trojan, password: f1f876b8-56a0-40dd-8801-f883617c10e5, sni: sg-102654-1625-sknt-xnakfh.yuanyi.homes, skip-cert-verify: true, udp: true}
   - {name: github.com/freefq - 德国黑森州法兰克福DigitalOcean数据中心 16, server: 138.68.90.231, port: 8080, type: vmess, uuid: 294ffdc3-5942-45ae-a154-dc6c92eacf1d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /cctv13/hd.m3u8, headers: {Host: 138.68.90.231}}, udp: true}
   - {name: US 美国晚高峰8K流媒体, server: vde2.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /chat, headers: {Host: vde2.0bad.com}}, udp: true}
   - {name: cn.xmss.vip, server: mf02.xmss.vip, port: 18888, type: ss, cipher: chacha20-ietf-poly1305, password: 35b0f578-8961-4a2b-99a1-db9555e522e4, udp: true}
@@ -33,6 +36,9 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
+      - USA 美国01 | 中转 | 1.0x | V1
+      - ""
+      - 中转|Trojan|新加坡 02
       - github.com/freefq - 德国黑森州法兰克福DigitalOcean数据中心 16
       - US 美国晚高峰8K流媒体
       - cn.xmss.vip
@@ -60,6 +66,9 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
+      - USA 美国01 | 中转 | 1.0x | V1
+      - ""
+      - 中转|Trojan|新加坡 02
       - github.com/freefq - 德国黑森州法兰克福DigitalOcean数据中心 16
       - US 美国晚高峰8K流媒体
       - cn.xmss.vip
@@ -88,6 +97,9 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - USA 美国01 | 中转 | 1.0x | V1
+      - ""
+      - 中转|Trojan|新加坡 02
       - github.com/freefq - 德国黑森州法兰克福DigitalOcean数据中心 16
       - US 美国晚高峰8K流媒体
       - cn.xmss.vip
@@ -128,6 +140,9 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - USA 美国01 | 中转 | 1.0x | V1
+      - ""
+      - 中转|Trojan|新加坡 02
       - github.com/freefq - 德国黑森州法兰克福DigitalOcean数据中心 16
       - US 美国晚高峰8K流媒体
       - cn.xmss.vip
@@ -161,6 +176,9 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
+      - USA 美国01 | 中转 | 1.0x | V1
+      - ""
+      - 中转|Trojan|新加坡 02
       - github.com/freefq - 德国黑森州法兰克福DigitalOcean数据中心 16
       - US 美国晚高峰8K流媒体
       - cn.xmss.vip
@@ -188,6 +206,9 @@ proxy-groups:
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
+      - USA 美国01 | 中转 | 1.0x | V1
+      - ""
+      - 中转|Trojan|新加坡 02
       - github.com/freefq - 德国黑森州法兰克福DigitalOcean数据中心 16
       - US 美国晚高峰8K流媒体
       - cn.xmss.vip
@@ -216,6 +237,9 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - USA 美国01 | 中转 | 1.0x | V1
+      - ""
+      - 中转|Trojan|新加坡 02
       - github.com/freefq - 德国黑森州法兰克福DigitalOcean数据中心 16
       - US 美国晚高峰8K流媒体
       - cn.xmss.vip
@@ -253,6 +277,9 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - USA 美国01 | 中转 | 1.0x | V1
+      - ""
+      - 中转|Trojan|新加坡 02
       - github.com/freefq - 德国黑森州法兰克福DigitalOcean数据中心 16
       - US 美国晚高峰8K流媒体
       - cn.xmss.vip
