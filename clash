@@ -17,6 +17,16 @@ proxies:
   - {name: 距离下次重置剩余：1 天, server: gaio.miaoge110.cf, port: 443, type: vmess, uuid: a1a65298-2677-46b2-bf10-a2e813181bf8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /jcnf, headers: {Host: gaio.miaoge110.cf}}, udp: true}
   - {name: Azure阿拉伯迪拜, server: lio.miaoge.gay, port: 443, type: vmess, uuid: a1a65298-2677-46b2-bf10-a2e813181bf8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: lio.miaoge.gay}}, udp: true}
   - {name: 喵哥Azure韩国, server: riop.miaoge110.cf, port: 443, type: vmess, uuid: a1a65298-2677-46b2-bf10-a2e813181bf8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: riop.miaoge110.cf}}, udp: true}
+  - {name: Relay_🇺🇸+US-🇺🇸US_472, server: sky998dmit3.xyz, port: 443, type: trojan, password: RRy34GGwsPt47SuC, skip-cert-verify: true, udp: true}
+  - {name: _03, server: 129.159.41.233, port: 32586, type: vmess, uuid: 341a9182-c423-499c-c46e-d17838b29037, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_977, server: vde1.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /chat, headers: {Host: vde1.0bad.com}}, udp: true}
+  - {name: Relay_🇨🇦+CA-🇨🇦CA_16, server: 921tw.tfzhc.top, port: 443, type: trojan, password: 3ad5547b-609b-4f59-916b-afebd85aba7d, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇺🇸 US-🇺🇸US_466, server: riop.miaoge110.cf, port: 443, type: vmess, uuid: 4893ed3e-8a5f-48dc-aa1e-bbc2e67a065b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: riop.miaoge110.cf}}, udp: true}
+  - {name: GB_210, server: 144.24.88.101, port: 16833, type: vmess, uuid: f5425ccf-3946-4fb4-eb24-5393d78a392f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇨🇳CN-🇷🇺RU_65, server: 4.hk.zz.xxxxx.x-t-fuckword.network, port: 36676, type: vmess, uuid: 244effd9-0204-3c4a-8537-0dca4e5fd9b5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇺🇸 US-🇺🇸US_465, server: lio.miaoge.gay, port: 443, type: vmess, uuid: 4893ed3e-8a5f-48dc-aa1e-bbc2e67a065b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: lio.miaoge.gay}}, udp: true}
+  - {name: Relay_🇨🇦+CA-🇨🇦CA_17, server: 913tw.tfzhc.top, port: 44318, type: trojan, password: 3ad5547b-609b-4f59-916b-afebd85aba7d, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇺🇸 US-🇺🇸US_469, server: xiao.miaoge.gay, port: 443, type: vmess, uuid: 4893ed3e-8a5f-48dc-aa1e-bbc2e67a065b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: xiao.miaoge.gay}}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
@@ -35,6 +45,16 @@ proxy-groups:
       - 距离下次重置剩余：1 天
       - Azure阿拉伯迪拜
       - 喵哥Azure韩国
+      - Relay_🇺🇸+US-🇺🇸US_472
+      - _03
+      - Relay_🇺🇸US-🇺🇸US_977
+      - Relay_🇨🇦+CA-🇨🇦CA_16
+      - Relay_🇺🇸 US-🇺🇸US_466
+      - GB_210
+      - Relay_🇨🇳CN-🇷🇺RU_65
+      - Relay_🇺🇸 US-🇺🇸US_465
+      - Relay_🇨🇦+CA-🇨🇦CA_17
+      - Relay_🇺🇸 US-🇺🇸US_469
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -52,6 +72,16 @@ proxy-groups:
       - 距离下次重置剩余：1 天
       - Azure阿拉伯迪拜
       - 喵哥Azure韩国
+      - Relay_🇺🇸+US-🇺🇸US_472
+      - _03
+      - Relay_🇺🇸US-🇺🇸US_977
+      - Relay_🇨🇦+CA-🇨🇦CA_16
+      - Relay_🇺🇸 US-🇺🇸US_466
+      - GB_210
+      - Relay_🇨🇳CN-🇷🇺RU_65
+      - Relay_🇺🇸 US-🇺🇸US_465
+      - Relay_🇨🇦+CA-🇨🇦CA_17
+      - Relay_🇺🇸 US-🇺🇸US_469
   - name: 🎥 NETFLIX
     type: select
     proxies:
@@ -70,6 +100,16 @@ proxy-groups:
       - 距离下次重置剩余：1 天
       - Azure阿拉伯迪拜
       - 喵哥Azure韩国
+      - Relay_🇺🇸+US-🇺🇸US_472
+      - _03
+      - Relay_🇺🇸US-🇺🇸US_977
+      - Relay_🇨🇦+CA-🇨🇦CA_16
+      - Relay_🇺🇸 US-🇺🇸US_466
+      - GB_210
+      - Relay_🇨🇳CN-🇷🇺RU_65
+      - Relay_🇺🇸 US-🇺🇸US_465
+      - Relay_🇨🇦+CA-🇨🇦CA_17
+      - Relay_🇺🇸 US-🇺🇸US_469
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -100,6 +140,16 @@ proxy-groups:
       - 距离下次重置剩余：1 天
       - Azure阿拉伯迪拜
       - 喵哥Azure韩国
+      - Relay_🇺🇸+US-🇺🇸US_472
+      - _03
+      - Relay_🇺🇸US-🇺🇸US_977
+      - Relay_🇨🇦+CA-🇨🇦CA_16
+      - Relay_🇺🇸 US-🇺🇸US_466
+      - GB_210
+      - Relay_🇨🇳CN-🇷🇺RU_65
+      - Relay_🇺🇸 US-🇺🇸US_465
+      - Relay_🇨🇦+CA-🇨🇦CA_17
+      - Relay_🇺🇸 US-🇺🇸US_469
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -123,6 +173,16 @@ proxy-groups:
       - 距离下次重置剩余：1 天
       - Azure阿拉伯迪拜
       - 喵哥Azure韩国
+      - Relay_🇺🇸+US-🇺🇸US_472
+      - _03
+      - Relay_🇺🇸US-🇺🇸US_977
+      - Relay_🇨🇦+CA-🇨🇦CA_16
+      - Relay_🇺🇸 US-🇺🇸US_466
+      - GB_210
+      - Relay_🇨🇳CN-🇷🇺RU_65
+      - Relay_🇺🇸 US-🇺🇸US_465
+      - Relay_🇨🇦+CA-🇨🇦CA_17
+      - Relay_🇺🇸 US-🇺🇸US_469
   - name: 📲 电报信息
     type: select
     proxies:
@@ -140,6 +200,16 @@ proxy-groups:
       - 距离下次重置剩余：1 天
       - Azure阿拉伯迪拜
       - 喵哥Azure韩国
+      - Relay_🇺🇸+US-🇺🇸US_472
+      - _03
+      - Relay_🇺🇸US-🇺🇸US_977
+      - Relay_🇨🇦+CA-🇨🇦CA_16
+      - Relay_🇺🇸 US-🇺🇸US_466
+      - GB_210
+      - Relay_🇨🇳CN-🇷🇺RU_65
+      - Relay_🇺🇸 US-🇺🇸US_465
+      - Relay_🇨🇦+CA-🇨🇦CA_17
+      - Relay_🇺🇸 US-🇺🇸US_469
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -158,6 +228,16 @@ proxy-groups:
       - 距离下次重置剩余：1 天
       - Azure阿拉伯迪拜
       - 喵哥Azure韩国
+      - Relay_🇺🇸+US-🇺🇸US_472
+      - _03
+      - Relay_🇺🇸US-🇺🇸US_977
+      - Relay_🇨🇦+CA-🇨🇦CA_16
+      - Relay_🇺🇸 US-🇺🇸US_466
+      - GB_210
+      - Relay_🇨🇳CN-🇷🇺RU_65
+      - Relay_🇺🇸 US-🇺🇸US_465
+      - Relay_🇨🇦+CA-🇨🇦CA_17
+      - Relay_🇺🇸 US-🇺🇸US_469
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -185,6 +265,16 @@ proxy-groups:
       - 距离下次重置剩余：1 天
       - Azure阿拉伯迪拜
       - 喵哥Azure韩国
+      - Relay_🇺🇸+US-🇺🇸US_472
+      - _03
+      - Relay_🇺🇸US-🇺🇸US_977
+      - Relay_🇨🇦+CA-🇨🇦CA_16
+      - Relay_🇺🇸 US-🇺🇸US_466
+      - GB_210
+      - Relay_🇨🇳CN-🇷🇺RU_65
+      - Relay_🇺🇸 US-🇺🇸US_465
+      - Relay_🇨🇦+CA-🇨🇦CA_17
+      - Relay_🇺🇸 US-🇺🇸US_469
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
